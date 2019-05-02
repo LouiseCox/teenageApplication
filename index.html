@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>teenageApplication</title>
+   
+</head>
+
+<body>
+        <h1>Teenage Application</h1>
+
+    <form>
+            Name:<input type="text" id="name"/>
+            <br />
+            <br />
+            Age:<input type="number" id="age"/>
+            <br />
+            <br />
+
+            <button type="submit" onclick="message()">Submit</button>
+    </form>
+
+    <script>
+        function message(){
+            var ageNum = Number(document.getElementById('age').value);
+            console.log(ageNum);
+                if((12 <= ageNum) && (ageNum <= 19)){
+                    document.write('Welcome to the Application!');
+                    }
+                else if(ageNum < 12){
+                    document.write('You are too young for this Application.');
+                    }
+                else if(ageNum > 19){
+                    document.write('You are too old for this Application.');
+                    }
+                
+        }
+    </script>
+    
+</body>
+</html>
